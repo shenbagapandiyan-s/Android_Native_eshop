@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ###
+  PHR_AndroidNative
+  %%
+  Copyright (C) 1999 - 2012 Photon Infotech Inc.
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  ###
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:gravity="center" android:background="#af303032"
+	android:padding="5dip" android:layout_gravity="center">
+	
+	<RelativeLayout android:orientation="vertical"
+		android:layout_width="match_parent" android:gravity="center" android:padding="5dip"
+		android:layout_height="wrap_content" android:background="@drawable/register_popup_bg" android:layout_gravity="center">
+
+		<EditText android:id="@+id/edit_email_box"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+			android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+			android:lines="1"
+			android:layout_marginTop="28dip" android:hint="Enter Email ID"
+			android:background="@drawable/round_corner" android:inputType="textEmailAddress"/>
+
+		<ImageButton android:id="@+id/btn_dialog_ok"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_below="@id/edit_email_box" android:background="@drawable/dialog_ok_btn"
+			android:layout_marginTop="20dip" android:layout_marginRight="18dip">
+		</ImageButton>
+
+		<ImageButton android:id="@+id/btn_dialog_cancel"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_below="@id/edit_email_box" android:layout_toRightOf="@id/btn_dialog_ok"
+			android:background="@drawable/cancel_btn"
+			android:layout_centerInParent="true" android:layout_alignTop="@+id/btn_dialog_ok">
+		</ImageButton>
+
+	</RelativeLayout>
+
+</LinearLayout>

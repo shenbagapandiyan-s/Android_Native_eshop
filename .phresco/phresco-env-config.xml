@@ -1,0 +1,13 @@
+<environments>
+    
+<environment default="true" desc="Production Environment is used for Development purpose only" name="Production">
+        <WebService appliesTo="tech-android-native" desc="" name="serivce">
+            <protocol>http</protocol>
+            <host>172.16.27.221</host>
+            <port>8880</port>
+            <username/>
+            <password/>
+            <context>eshop</context>
+        </WebService>
+    </environment>
+</environments>
